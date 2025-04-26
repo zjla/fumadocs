@@ -48,6 +48,8 @@ export const blog = defineCollections({
   }),
 });
 
+console.log(fs.readdirSync('./'));
+
 export default defineConfig({
   mdxOptions: {
     rehypeCodeOptions: {
