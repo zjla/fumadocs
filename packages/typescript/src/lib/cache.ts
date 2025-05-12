@@ -4,6 +4,7 @@ import path from 'node:path';
 
 export function createCache() {
   const dir = path.join(process.cwd(), '.next/fumadocs-typescript');
+  fs.mkdirSync(dir, { recursive: true });
 
   return {
     write(input: string, data: unknown) {
